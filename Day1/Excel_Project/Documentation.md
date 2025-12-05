@@ -1,92 +1,74 @@
 
-## 📌 Day 1 — Sales CRM Data Cleaning Project
+## 📌 Day 1 — CRM Sales Data Cleaning Project
 
-**Tool Used:** Excel Online
-**Dataset:** CRM Sales Data (Leads → Deals)
+**Tool Used:** Microsoft Excel (Mac)
+**Dataset Type:** Zoho CRM Sales (Leads → Deals)
 
 ---
 
 ### 🔍 1️⃣ Problem Overview
 
-The raw dataset contained CRM sales records with the following issues:
+Raw dataset had the following issues:
 
-| Issue Type                 | Description                                    | Impact                 |
-| -------------------------- | ---------------------------------------------- | ---------------------- |
-| Duplicate Records          | Lead ID repeated                               | Wrong counts & revenue |
-| Missing Values             | Blank Deal Value, Date, Name fields            | Incomplete analysis    |
-| Inconsistent Date Formats  | Mixed formats: DD-MM-YY, DD/MM/YY, YYYY format | Wrong sorting/timeline |
-| Text Formatting Issues     | Product names mismatched (CRM Pro vs crm pro)  | Incorrect grouping     |
-| Invalid Numeric Data       | “N/A” in Deal Value field                      | Calculation errors     |
-| Non-standard Status Values | “Close won” vs “Won”                           | Wrong KPI results      |
+| Issue Type                | Description                                | Impact                              |
+| ------------------------- | ------------------------------------------ | ----------------------------------- |
+| Duplicate Records         | Lead ID repeated                           | Wrong counts & revenue calculations |
+| Missing Values            | Deal_Value, Lead_Name, Date missing        | Leads to incorrect KPI reporting    |
+| Inconsistent Date Formats | Mixed formats (DD-MM-YY / DD/MM/YY / YYYY) | Sorting errors & dashboard issues   |
+| Product Name Variations   | “crm pro”, extra spaces                    | Incorrect revenue grouping          |
+| Invalid Numeric Data      | “N/A” in Deal_Value                        | Formula errors in Excel             |
+| Status Format Issues      | “Close won”, “Negotiation”                 | Wrong Win Rate calculation          |
 
-➡️ These directly affect **Revenue**, **Win Rate**, and **Sales Funnel** metrics.
+➡️ These directly impact **Win Rate, Revenue, and Sales Funnel insights**.
 
 ---
 
 ### 🛠 2️⃣ Cleaning Steps Performed
 
-| Cleaning Action                    | Excel Feature Used                 | Why                          |
-| ---------------------------------- | ---------------------------------- | ---------------------------- |
-| Removed duplicates                 | Data → Remove Duplicates           | Ensure uniqueness of records |
-| Identified & filled missing values | Manual + Logical value replacement | Accurate totals & insights   |
-| Standardized date format           | Format Cells → Date                | Correct time-based analysis  |
-| Cleaned product names              | LOWER / TRIM / Replace             | Consistent reporting         |
-| Converted invalid Deal_Value       | Replace + Number formatting        | Enable numeric operations    |
-| Normalized Status                  | Replace text options               | Correct KPI classification   |
-
-📌 Notes recorded at each step for business traceability
+| Action                    | Excel Feature Used                    | Result                           |
+| ------------------------- | ------------------------------------- | -------------------------------- |
+| Removed duplicates        | Data → Remove Duplicates              | Unique Lead_ID records preserved |
+| Filled missing Deal_Value | AVERAGE + Paste as Value              | Accurate revenue computations    |
+| Filled blank Lead_Name    | Logical placeholder (“Email Contact”) | Consistent CRM contacts          |
+| Standardized date format  | Format Cells → DD-MM-YYYY             | Correct time trend analysis      |
+| Fixed product names       | Find & Replace                        | Clean grouping by product        |
+| Normalized Status values  | Replace All                           | Correct Won/Lost classification  |
 
 ---
 
-### 📈 3️⃣ Before vs After Snapshot
+### 🖼️ 3️⃣ Before vs After Screenshots
 
-| Metric                 | Before Cleaning | After Cleaning |
-| ---------------------- | --------------- | -------------- |
-| Total Rows             | 7               | 6              |
-| Missing Deal Values    | 2               | 0              |
-| Incorrect Date Formats | 3               | 0              |
-| Inconsistent Status    | 1               | 0              |
+📸 Add your screenshots here
 
-➡️ Data became **analytics-ready** ✔
+| Raw Data (Before)        | Cleaned Data (After)     |
+| ------------------------ | ------------------------ |
+| <img width="625" height="195" alt="image" src="https://github.com/user-attachments/assets/ab70b8fc-b0d1-4179-8357-1b8ab5af2aaa" />|<img width="611" height="346" alt="image" src="https://github.com/user-attachments/assets/4f321729-f9e5-4c37-b587-501da46fb4b9" />
+ |
 
----
 
-### 📊 4️⃣ Business Insights Enabled
-
-After cleaning, we can now calculate:
-
-* Total **Deals Won**
-* **Win Rate**
-* **Revenue per Product**
-* **Sales Funnel** drop-offs
-
-This is directly useful for **Zoho CRM** decision-making.
 
 ---
+### 📝 4 Conclusion
 
-### 📝 5️⃣ Conclusion
+This project demonstrates my skills in:
 
-This project demonstrates:
+✔ Excel Data Cleaning
+✔ CRM Sales Data Understanding
+✔ KPI Computation
+✔ Business Insight Generation
+✔ Documentation & Portfolio Building
 
-✔ Real-world data quality fixes
-✔ Excel cleaning mastery
-✔ Analytical thinking with business context
-✔ CRM Sales data understanding
-✔ Ready for dashboarding & KPI reporting
-
-📌 Next Step:
-Perform KPI analysis and build **Sales Performance Dashboard** (Day-2)
-
----
-
-> **This is part of my 30-day Zoho Data Analyst preparation.**
+📌 This dataset is now ready for:
+➡ Sales Funnel analysis
+➡ Zoho Analytics dashboard
+➡ Data-driven decision-making
 
 ---
 
 ### 📅 Author
 
-**Srisanjana** — Aspiring Zoho Data Analyst
+**Srisanjana**
+*Aspiring Zoho Data Analyst*
 
 ---
-
 
